@@ -1,6 +1,7 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import AppFooter from '@/app/components/AppFooter';
 import ProjectCard from '@/app/components/ProjectCard';
-import Link from 'next/link';
 
 export default function Design() {
 	const projectName = 'Design Projects';
@@ -9,9 +10,9 @@ export default function Design() {
 			<section className="flex flex-col gap-7 px-10 py-7">
 				<h1 className="font-semibold text-4xl">{projectName}</h1>
 				<p className="max-w-[34rem] text-base opacity-60">
-					Product design is a dynamic and multifaceted discipline that blends aesthetics, functionality, and innovation to create products that enhance users'
-					lives and experiences. Through a meticulous process of research, ideation, prototyping, and iteration, product designers transform concepts into
-					tangible solutions, addressing both practical needs and emotional desires.
+					Product design is a dynamic and multifaceted discipline that blends aesthetics, functionality, and innovation to create products that enhance
+					users&apos; lives and experiences. Through a meticulous process of research, ideation, prototyping, and iteration, product designers transform
+					concepts into tangible solutions, addressing both practical needs and emotional desires.
 					<br />
 					<br />
 					Striking a delicate balance between form and function, product design continually evolves to adapt to emerging technologies, societal trends, and user
@@ -19,17 +20,23 @@ export default function Design() {
 				</p>
 			</section>
 			<ul className="flex gap-3 p-7">
-				<Link href="/design/project-1" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer">Project 1</Link>
-				<Link href="/design/project-2" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer">Project 2</Link>
-				<Link href="/design/project-3" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer">Project 3</Link>
+				<Link href="/design/project-1" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer">
+					Project 1
+				</Link>
+				<Link href="/design/project-2" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer">
+					Project 2
+				</Link>
+				<Link href="/design/project-3" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer">
+					Project 3
+				</Link>
 			</ul>
 			<section className="rounded-[1.875rem] p-1.5 w-full aspect-[2] card-gradient">
-				<img src="/images/project-cover-1.jpg" className="rounded-[1.875rem]" />
+				<Image src="/images/project-cover-1.jpg" alt="project-cover" className="rounded-[1.875rem]" />
 			</section>
 			{/* Section-1 */}
 			<section className="flex items-center my-16">
 				<div className="flex-1">
-					<img src="/images/section-cover-1.svg" />
+					<Image src="/images/section-cover-1.svg" alt="section-cover" />
 				</div>
 				<div className="flex-1 flex flex-col gap-10 p-[5.625rem]">
 					<h2 className="text-4xl">Project title and some additional information</h2>
@@ -66,7 +73,7 @@ export default function Design() {
 						Explain an important feature of the project and show some image variations to showcase your versatile solution to a problem.
 					</h5>
 				</div>
-				<img src="/images/section-cover-2.svg" className="relative -left-full translate-x-full max-w-5xl" />
+				<Image src="/images/section-cover-2.svg" alt="section-cover-2" className="relative -left-full translate-x-full max-w-5xl" />
 			</section>
 			{/* Section-4 */}
 			<section className="px-32">
@@ -86,9 +93,9 @@ export default function Design() {
 					<span className="opacity-60">And a subtitle</span>
 				</h2>
 				<h5 className="text-lg opacity-60">
-					Write about what you’ve learned during this project, what are the main takeaways and what will you do differently in your next projects.
+					Write about what you&apos;ve learned during this project, what are the main takeaways and what will you do differently in your next projects.
 				</h5>
-				<img src="/images/background-3.svg" className="absolute -bottom-1/2 w-[200%]" />
+				<Image src="/images/background-3.svg" alt="backgroound" className="absolute -bottom-1/2 w-[200%]" />
 			</section>
 			<AppFooter />
 		</main>

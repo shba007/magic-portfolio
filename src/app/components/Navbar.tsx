@@ -29,7 +29,7 @@ export default function Navbar() {
 
 	useLayoutEffect(() => {
 		setIsMobile(window.innerWidth < 768);
-	});
+	}, []);
 
 	return (
 		<nav className="fixed left-1/2 bottom-4 md:top-4 md:bottom-auto md:left-4 -translate-x-1/2 md:translate-x-0 p-1 rounded-full border border-white/10 navbar !bg-black z-10">

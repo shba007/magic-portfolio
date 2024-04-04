@@ -5,7 +5,7 @@
 	"theme_color": "#15161A",
 	"background_color": "#15161A",
 	"orientation": "portrait",
-	"start_url": "http://localhost:3000/",
+	"start_url": "https://magic-portfolio.vercel.app/",
 	"display": "standalone",
 	"shortcuts": [],
 	"icons": [
@@ -104,7 +104,7 @@
 		},
 		{
 			"src": "/pwa/screenshot-desktop-2.webp",
-			"sizes": "1024x655",
+			"sizes": "1024x576",
 			"type": "image/webp",
 			"form_factor": "wide",
 			"label": "Screenshot 2"
@@ -118,7 +118,7 @@
 		},
 		{
 			"src": "/pwa/screenshot-mobile-2.webp",
-			"sizes": "439x1024",
+			"sizes": "576x1024",
 			"type": "image/webp",
 			"form_factor": "narrow",
 			"label": "Screenshot 2"

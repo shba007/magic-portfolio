@@ -17,9 +17,9 @@ export default function Home() {
 				<h2 className="px-10 font-semibold text-3xl">Projects</h2>
 				<div className="relative left-1/2 -translate-x-1/2 w-[calc(100vw-1.5rem)] px-4 overflow-x-scroll scrollbar-hidden">
 					<div className="flex gap-7 w-fit mx-32">
-						<ProjectCard title="Design" description="My design projects" img="/images/cover-1.jpg" icon="/icons/tool-1.svg" link="/design/project-1" />
-						<ProjectCard title="Art" description="My art projects" img="/images/cover-2.jpg" icon="/icons/tool-2.svg" link="/art" />
-						<ProjectCard title="Photography" description="My photos" img="/images/cover-3.jpg" icon="/icons/tool-3.svg" link="/photograph" />
+						<ProjectCard title="Design" description="My design projects" img="/images/cover-1.jpg" icon="/icons/angle.svg" link="/design/project-1" />
+						<ProjectCard title="Art" description="My art projects" img="/images/cover-2.jpg" icon="/icons/palette.svg" link="/art" />
+						<ProjectCard title="Photography" description="My photos" img="/images/cover-3.jpg" icon="/icons/image.svg" link="/photograph" />
 					</div>
 				</div>
 			</div>

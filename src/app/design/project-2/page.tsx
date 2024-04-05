@@ -15,6 +15,7 @@ export default function Design() {
 
 	return (
 		<main className="mx-auto max-w-[67.5rem]">
+			{' '}
 			<section className="flex flex-col gap-7 px-10 py-7">
 				<h1 className="font-semibold text-4xl">{projectName}</h1>
 				<p className="max-w-[34rem] text-base opacity-60">
@@ -36,71 +37,59 @@ export default function Design() {
 				</Link>
 			</ul>
 			<section className="rounded-[1.875rem] p-1.5 w-full aspect-[2] card-gradient">
-				<Image src="/images/project-cover-1.jpg" width={2880} height={1440} alt="project-cover" className="rounded-[1.875rem]" />
+				<Image src="/images/project-cover-2.jpg" width={1440} height={1440} alt="project-cover" className="rounded-[1.875rem]" />
 			</section>
-			{/* Section-1 */}
-			<section className="flex items-center my-16">
-				<div className="flex-1">
-					<Image src="/images/section-cover-1.svg" width={1440} height={1440} alt="section-cover" />
-				</div>
-				<div className="flex-1 flex flex-col gap-10 p-[5.625rem]">
-					<h2 className="text-4xl">Project title and some additional information</h2>
-					<h5 className="text-xl opacity-80">
+			<section className="flex justify-between items-center gap-20 py-36">
+				<div className="w-[39.375rem] aspect-[1.1] bg-white/10 rounded-2xl" />
+				<div className="flex flex-col gap-8 max-w-md">
+					<h2 className="text-4xl font-semibold">Project title and some additional information</h2>
+					<p className="text-lg">
 						Explain what your project is about: what kind of problem does it solve, who is the target group, and how does it provide a sufficient solution?
-					</h5>
-					<h6 className="text-xs opacity-80">
+					</p>
+					<p className="text-xs">
 						You can additionally provide more details, but try to be brief. Nobody wants to read long texts, so it’s crucial to have a good balance of images
-						and texts.
-					</h6>
+						and te
+					</p>
+					<Link href={''} className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer">
+						Visit Link
+					</Link>
 				</div>
 			</section>
-			{/* Section-2 */}
 			<section>
-				<div className="flex-1 flex flex-col gap-10 mx-auto py-[5.625rem] text-center">
-					<h2 className="text-4xl">
-						Section title:
-						<br /> And a subtitle
+				<div className="flex flex-col  gap-8 mx-auto max-w-3xl text-center">
+					<h2 className="mx-auto w-fit text-4xl font-semibold">
+						<span>Section title:</span>
+						<br />
+						And a subtitle
 					</h2>
-					<h5 className="text-lg opacity-80">
+					<p className="text-lg text-white/80">
 						Explain an important feature of the project and show some image variations to showcase your versatile solution to a problem.
-					</h5>
+					</p>
 				</div>
 				<ProjectCard title="Add image" description='Change the fill type to "image"' img="/images/cover-1.jpg" icon="/icons/thunder.svg" isSizeFluid={true} />
 			</section>
-			{/* Section-3 */}
-			<section className="relative">
-				<div className="flex-1 flex flex-col gap-10 ml-auto py-[5.625rem] text-right max-w-3xl">
-					<h2 className="text-4xl">
+			<section className="flex justify-between gap-20 py-36">
+				<div className="flex flex-col gap-8 py-24 max-w-md text-right">
+					<h2 className="text-4xl font-semibold">
 						Section title:
-						<br /> And a subtitle
+						<br />
+						And a subtitle
 					</h2>
-					<h5 className="text-lg opacity-80">
+					<p className="text-lg">
 						Explain an important feature of the project and show some image variations to showcase your versatile solution to a problem.
-					</h5>
+					</p>
 				</div>
-				<Image src="/images/section-cover-2.svg" width={1440} height={1440} alt="section-cover-2" className="relative -left-full translate-x-full max-w-5xl" />
+				<div className="w-[36.375rem] aspect-[0.75] bg-white/10 rounded-2xl" />
 			</section>
-			{/* Section-4 */}
-			<section className="px-32">
-				<div className="flex-1 flex flex-col gap-10 mx-auto py-[5.625rem] text-center">
-					<h2 className="text-4xl">Section title with different styles</h2>
-					<h5 className="text-lg opacity-80">
-						Explain an important feature of the project and show some image variations to showcase your versatile solution to a problem.
-					</h5>
-				</div>
-				<div className="rounded-3xl aspect-[1.31] bg-white/10"></div>
-			</section>
-			{/* Section-5 */}
-			<section className="relative flex flex-col gap-16 my-32 mx-auto max-w-3xl">
-				<h2 className="text-4xl">
+			<section className="flex flex-col gap-8 py-24 max-w-3xl text-left">
+				<h2 className="text-4xl font-semibold">
 					Takeaway:
 					<br />
-					<span className="opacity-60">And a subtitle</span>
+					And a subtitle
 				</h2>
-				<h5 className="text-lg opacity-60">
-					Write about what you&apos;ve learned during this project, what are the main takeaways and what will you do differently in your next projects.
-				</h5>
-				<Image src="/images/background-3.svg" width={1440} height={1440} alt="backgroound" className="absolute -bottom-1/2 w-[200%]" />
+				<p className="text-lg">
+					Write about what you’ve learned during this project, what are the main takeaways and what will you do differently in your next projects.
+				</p>
 			</section>
 			<AppFooter />
 		</main>

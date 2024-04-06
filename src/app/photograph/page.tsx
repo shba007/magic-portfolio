@@ -1,5 +1,6 @@
 import AppFooter from '@/app/components/AppFooter';
 import ProjectCard from '@/app/components/ProjectCard';
+import Image from 'next/image';
 
 export default function Photograph() {
 	const projectName = 'Photography';
@@ -11,31 +12,31 @@ export default function Photograph() {
 	];
 
 	return (
-		<main className="mx-auto max-w-[67.5rem]">
-			<section className="flex flex-col gap-7 px-10 py-7">
-				<h1 className="font-semibold text-4xl">{projectName}</h1>
-				<p className="max-w-[34rem] text-base opacity-60">
+		<main className="m-4 md:mx-auto max-w-[67.5rem]">
+			<section className="flex flex-col gap-7 md:px-10 md:py-7">
+				<h1 className="font-semibold text-2xl md:text-4xl">{projectName}</h1>
+				<p className="max-w-[34rem] text-sm md:text-base opacity-60">
 					{details[0]}
 					<br />
 					<br />
 					{details[1]}
 				</p>
 			</section>
-			<section className="grid grid-cols-2 grid-flow-row gap-2">
-				<div className="col-span-2 w-full aspect-[2.023] bg-white/10 rounded-[2rem]" />
-				<div className="row-span-2 col-span-1 w-full aspect-[0.81] bg-white/10 rounded-[2rem]" />
-				<div className="col-span-1 w-full aspect-[1.67] bg-white/10 rounded-[2rem]" />
-				<div className="col-span-1 w-full aspect-[1.67] bg-white/10 rounded-[2rem]" />
-				<div className="col-span-2 w-full aspect-[2.023] bg-white/10 rounded-[2rem]" />
-				<div className="col-span-1 w-full aspect-[1.67] bg-white/10 rounded-[2rem]" />
-				<div className="row-span-2 col-span-1 w-full aspect-[0.81] bg-white/10 rounded-[2rem]" />
-				<div className="col-span-1 w-full aspect-[1.67] bg-white/10 rounded-[2rem]" />
+			<section className="grid grid-cols-2 grid-flow-row gap-2 my-4">
+				<div className="col-span-2 w-full aspect-[2.023] bg-white/10 rounded-lg md:rounded-[2rem]" />
+				<div className="row-span-2 col-span-1 w-full aspect-[0.81] bg-white/10 rounded-lg md:rounded-[2rem]" />
+				<div className="col-span-1 w-full aspect-[1.67] bg-white/10 rounded-lg md:rounded-[2rem]" />
+				<div className="col-span-1 w-full aspect-[1.67] bg-white/10 rounded-lg md:rounded-[2rem]" />
+				<div className="col-span-2 w-full aspect-[2.023] bg-white/10 rounded-lg md:rounded-[2rem]" />
+				<div className="col-span-1 w-full aspect-[1.67] bg-white/10 rounded-lg md:rounded-[2rem]" />
+				<div className="row-span-2 col-span-1 w-full aspect-[0.81] bg-white/10 rounded-lg md:rounded-[2rem]" />
+				<div className="col-span-1 w-full aspect-[1.67] bg-white/10 rounded-lg md:rounded-[2rem]" />
 				<ProjectCard
 					className="col-span-2"
 					title="Add image"
 					description='Change the fill type to "image"'
-					img="/images/cover-1.jpg"
-					icon="/icons/thunder.svg"
+					img="cover-1.jpg"
+					icon="thunder.svg"
 					isSizeFluid={true}
 				/>
 			</section>

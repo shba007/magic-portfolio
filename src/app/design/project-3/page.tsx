@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import AppFooter from '@/app/components/AppFooter';
+import ProjectCard from '@/app/components/ProjectCard';
 
 export default function Design() {
 	const projectName = 'Design Projects';
@@ -13,31 +14,80 @@ export default function Design() {
 	];
 
 	return (
-		<main className="mx-auto max-w-[67.5rem]">
+		<main className="m-4 md:mx-auto max-w-[67.5rem]">
 			{' '}
-			<section className="flex flex-col gap-7 px-10 py-7">
-				<h1 className="font-semibold text-4xl">{projectName}</h1>
-				<p className="max-w-[34rem] text-base opacity-60">
+			<section className="flex flex-col gap-7 md:px-10 md:py-7">
+				<h1 className="font-semibold text-2xl md:text-4xl">{projectName}</h1>
+				<p className="max-w-[34rem] text-sm md:text-base opacity-60">
 					{details[0]}
 					<br />
 					<br />
 					{details[1]}
 				</p>
 			</section>
-			<ul className="flex gap-3 p-7">
-				<Link href="/design/project-1" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer">
+			<ul className="flex gap-3 py-4 md:p-7">
+				<Link href="/design/project-1" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer whitespace-nowrap">
 					Project 1
 				</Link>
-				<Link href="/design/project-2" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer">
+				<Link href="/design/project-2" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer whitespace-nowrap">
 					Project 2
 				</Link>
-				<Link href="/design/project-3" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer">
+				<Link href="/design/project-3" className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer whitespace-nowrap">
 					Project 3
 				</Link>
 			</ul>
 			<section className="rounded-[1.875rem] p-1.5 w-full aspect-[2] card-gradient">
 				<Image src="/images/project-cover-3.jpg" width={1440} height={1440} alt="project-cover" className="rounded-[1.875rem]" />
 			</section>
+			<section className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-20 my-4 md:my-36">
+				<div className="w-full md:w-[39.375rem] aspect-[1.1] bg-white/10 rounded-2xl" />
+				<div className="flex flex-col gap-8 max-w-md">
+					<h2 className="text-2xl md:text-4xl font-semibold">Project title and some additional information</h2>
+					<p className="text-sm md:text-lg">
+						Explain what your project is about: what kind of problem does it solve, who is the target group, and how does it provide a sufficient solution?
+					</p>
+					<p className="text-xs">
+						You can additionally provide more details, but try to be brief. Nobody wants to read long texts, so it’s crucial to have a good balance of /images
+						and te
+					</p>
+					<Link href={''} className="tab rounded-full px-4 py-2 w-fit text-[0.65rem] cursor-pointer">
+						Visit Link
+					</Link>
+				</div>
+			</section>
+			<section className="flex flex-col gap-9">
+				<div className="flex flex-col gap-8 mx-auto max-w-3xl text-center">
+					<h2 className="mx-auto w-fit text-2xl md:text-4xl font-semibold">
+						<span>Section title:</span>
+						<br />
+						And a subtitle
+					</h2>
+					<p className="text-sm md:text-lg text-white/80">
+						Explain an important feature of the project and show some image variations to showcase your versatile solution to a problem.
+					</p>
+				</div>
+				<ProjectCard title="Add image" description='Change the fill type to "image"' img="cover-1.jpg" icon="thunder.svg" isSizeFluid={true} />
+			</section>
+			<section className="relative">
+				<Image
+					src="/images/section-cover-2.svg"
+					width={1440}
+					height={1440}
+					alt="section-cover-2"
+					className="relative -left-full translate-x-full w-full max-w-5xl"
+				/>
+				<div className="flex-1 flex flex-col gap-10 ml-auto my-4 md:my-[5.625rem] text-right max-w-3xl">
+					<h2 className="text-2xl md:text-4xl">
+						Section title:
+						<br />
+						And a subtitle
+					</h2>
+					<h5 className="text-sm md:text-lg opacity-80">
+						Explain an important feature of the project and show some image variations to showcase your versatile solution to a problem.
+					</h5>
+				</div>
+			</section>
+			{/* TODO: Section Title */}
 			<AppFooter />
 		</main>
 	);

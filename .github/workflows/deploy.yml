@@ -14,7 +14,7 @@ env:
   REPO: ${{ github.repository }}
   REGISTRY: ${{ vars.REGISTRY }}
   USERNAME: ${{ vars.USERNAME }}
-  VITE_APP_BASE_URL: '/magic-portfolio'
+  APP_BASE_URL: '/magic-portfolio'
 
 jobs:
   build-static:

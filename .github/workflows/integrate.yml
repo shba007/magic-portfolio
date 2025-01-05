@@ -6,7 +6,7 @@ on:
       - develop
 
 env:
-  VITE_APP_BASE_URL: ''
+  APP_BASE_URL: ''
 
 jobs:
   build:

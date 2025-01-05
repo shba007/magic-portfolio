@@ -26,6 +26,6 @@ ENV NEXT_APP_VERSION=$VERSION
 
 COPY ./nginx.conf /etc/nginx/nginx.conf
 
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/out /usr/share/nginx/html
 
 EXPOSE 8080

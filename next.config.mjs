@@ -10,7 +10,7 @@ const nextConfig = withPWA({
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  basePath: `${process.env.APP_BASE_URL ?? '/'}`,
+  basePath: `${process.env.APP_BASE_URL ?? ''}`,
   assetPrefix: `${process.env.APP_BASE_URL ?? ''}/`,
 })
 

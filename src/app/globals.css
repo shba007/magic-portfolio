@@ -3,36 +3,35 @@
 @tailwind utilities;
 
 :root {
-	@apply aspect-[1.66] aspect-[1.55] aspect-[1.95] aspect-[1.86];
+  @apply aspect-[1.55] aspect-[1.66] aspect-[1.86] aspect-[1.95];
 }
 
 body {
-	@apply bg-dark-500 text-white;
+  @apply bg-dark-500 text-white;
 }
 
 .card-gradient {
-	background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.02) 100%);
-	box-shadow: 0px 8px 16px 0px #00000099;
-	box-shadow: 0px 3px 8px 0px #0000001f;
-	box-shadow: 0px 1px 2px 0px #0000000a;
+  background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.02) 100%);
+  box-shadow: 0px 8px 16px 0px #00000099;
+  box-shadow: 0px 3px 8px 0px #0000001f;
+  box-shadow: 0px 1px 2px 0px #0000000a;
 }
 
 .scrollbar-hidden {
-	-ms-overflow-style: none; /* Internet Explorer 10+ */
-	scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 .scrollbar-hidden::-webkit-scrollbar {
-	display: none; /* Safari and Chrome */
+  display: none; /* Safari and Chrome */
 }
 
 .tab {
-	background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
-		linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
-	box-shadow: 0px 6px 9px 0px #00000099;
-	box-shadow: 0px 2px 3px 0px #0000001f;
-	box-shadow: 0px 1px 1px 0px #0000000a;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 6px 9px 0px #00000099;
+  box-shadow: 0px 2px 3px 0px #0000001f;
+  box-shadow: 0px 1px 1px 0px #0000000a;
 }
 
 .navbar {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
 }

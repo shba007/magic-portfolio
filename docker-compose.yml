@@ -1,0 +1,9 @@
+name: 'magic-portfolio'
+services:
+  web:
+    image: 'ghcr.io/shba007/magic-portfolio:latest'
+    restart: on-failure:3
+    env_file:
+      - .env.prod
+    ports:
+      - 3400:8080

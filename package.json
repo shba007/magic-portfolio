@@ -1,29 +1,58 @@
 {
   "name": "magic-portfolio",
   "version": "0.1.0",
+  "description": "UI of a upwork client",
+  "author": "Shirsendu Bairagi <shirsendu2001@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shba007/magic-portfolio.git"
+  },
+  "type": "commonjs",
   "private": true,
+  "volta": {
+    "node": "22.12.0"
+  },
+  "engines": {
+    "node": "^20.15.0 || ^22.11.0",
+    "pnpm": "^9.15.0"
+  },
+  "packageManager": "pnpm@9.15.2",
   "scripts": {
+    "prepare": "husky",
     "dev": "next dev",
+    "detect": "gitleaks git --verbose",
+    "lint": "next lint",
+    "format": "prettier . --write",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "docker:build": "docker build --build-arg VERSION=dev --build-arg BUILD_TIME=now -t magic-portfolio:dev .",
+    "docker:start": "docker run --detach --name magic-portfolio-dev -p 3700:8080 magic-portfolio:dev",
+    "tunnel": "untun tunnel --port 3700 http://localhost:3700"
   },
   "dependencies": {
-    "next": "14.1.4",
+    "next": "15.1.3",
     "next-pwa": "^5.6.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "sharp": "^0.33.3"
+    "react": "^19",
+    "react-dom": "^19",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.3",
-    "typescript": "^5"
+    "@changesets/cli": "^2.27.11",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "15.1.3",
+    "husky": "^9.1.7",
+    "postcss": "^8.4.49",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
   }
 }

@@ -1,3 +1,8 @@
+# Git/Github
+.git
+.github
+.gitignore
+
 # Next dev/build outputs
 .vercel
 /.next/
@@ -12,9 +17,6 @@ node_modules
 logs
 *.log
 
-# Testing
-coverage
-
 # Misc
 .DS_Store
 .fleet
@@ -25,6 +27,6 @@ coverage
 .env*
 !.env.example
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Dockerfile
+.dockerignore
+Dockerfile

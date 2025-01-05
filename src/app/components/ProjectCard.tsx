@@ -20,9 +20,9 @@ export default function ProjectCard({
 }) {
   const renderContent = (
     <>
-      <Image src={`/images/${img}`} alt={title} width={1945} height={1024} className={`w-full ${isSizeFluid ? 'aspect-[1.86]' : 'aspect-[1.95]'} rounded-[1.5rem]`} />
+      <Image src={`./images/${img}`} alt={title} width={1945} height={1024} className={`w-full ${isSizeFluid ? 'aspect-[1.86]' : 'aspect-[1.95]'} rounded-[1.5rem]`} />
       <div className="flex gap-5 px-10 py-3">
-        <Image src={`/icons/${icon}`} alt="icon" width={28} height={28} />
+        <Image src={`./icons/${icon}`} alt="icon" width={28} height={28} />
         <div className="flex flex-col gap-2">
           <h4 className="text-sm font-semibold">{title}</h4>
           <p className="text-xs">{description}</p>

@@ -42,7 +42,7 @@ export default function Navbar() {
         {internalLinks.map(({ icon, path }, index) => (
           <li key={icon} className="flex h-9 w-10 items-center justify-center p-2">
             <Link href={path} className={`flex flex-col items-center justify-center gap-2 ${currPath == path && 'translate-y-1'}`}>
-              <Image src={`/icons/${icon}.svg`} alt={icon} width={18} height={18} className={`size-[18px] ${currPath == path && 'scale-[1.33]'} duration-500`} />
+              <Image src={`./icons/${icon}.svg`} alt={icon} width={18} height={18} className={`size-[18px] ${currPath == path && 'scale-[1.33]'} duration-500`} />
               <span className={`${currPath == path ? 'inline-block' : 'hidden'} size-1 rounded-full bg-[#AAAEB9]`} />
             </Link>
           </li>
@@ -51,7 +51,7 @@ export default function Navbar() {
         {externalLinks.map(({ icon, path }) => (
           <li key={icon} className="flex size-9 items-center justify-center p-2">
             <Link href={path} target="_blank">
-              <Image src={`/icons/${icon}.svg`} alt={icon} width={24} height={24} className={`size-6`} />
+              <Image src={`./icons/${icon}.svg`} alt={icon} width={24} height={24} className={`size-6`} />
             </Link>
           </li>
         ))}

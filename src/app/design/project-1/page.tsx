@@ -36,12 +36,12 @@ export default function Design() {
         </Link>
       </ul>
       <section className="card-gradient aspect-[2] w-full rounded-[1.875rem] p-1.5">
-        <Image src="/images/project-cover-1.jpg" width={2880} height={1440} alt="project-cover" className="rounded-[1.875rem]" />
+        <Image src="./images/project-cover-1.jpg" width={2880} height={1440} alt="project-cover" className="rounded-[1.875rem]" />
       </section>
       {/* Section-1 */}
       <section className="my-4 flex flex-col items-center md:my-16 md:flex-row">
         <div className="w-4/5 flex-1 md:w-full">
-          <Image src="/images/section-cover-1.svg" width={1440} height={1440} alt="section-cover" />
+          <Image src="./images/section-cover-1.svg" width={1440} height={1440} alt="section-cover" />
         </div>
         <div className="my-4 flex flex-1 flex-col gap-6 md:my-[5.625rem] md:gap-10">
           <h2 className="text-2xl md:text-4xl">Project title and some additional information</h2>
@@ -75,7 +75,7 @@ export default function Design() {
           </h2>
           <h5 className="text-sm opacity-80 md:text-lg">Explain an important feature of the project and show some image variations to showcase your versatile solution to a problem.</h5>
         </div>
-        <Image src="/images/section-cover-2.svg" width={1440} height={1440} alt="section-cover-2" className="relative -left-full w-full max-w-5xl translate-x-full" />
+        <Image src="./images/section-cover-2.svg" width={1440} height={1440} alt="section-cover-2" className="relative -left-full w-full max-w-5xl translate-x-full" />
       </section>
       {/* Section-4 */}
       <section className="md:mx-32">
@@ -93,7 +93,7 @@ export default function Design() {
           <span className="opacity-60">And a subtitle</span>
         </h2>
         <h5 className="text-sm opacity-60 md:text-lg">Write about what you&apos;ve learned during this project, what are the main takeaways and what will you do differently in your next projects.</h5>
-        <Image src="/images/background-3.svg" width={1440} height={1440} alt="backgroound" className="absolute -bottom-1/2 w-[200%]" />
+        <Image src="./images/background-3.svg" width={1440} height={1440} alt="backgroound" className="absolute -bottom-1/2 w-[200%]" />
       </section>
       <AppFooter />
     </main>
